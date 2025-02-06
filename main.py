@@ -19,6 +19,7 @@ pygame.display.set_icon(icon)  # вывод иконки на экран
 
 # Работа со спрайтами (загрузка и вывод на экран)
 target_img = pygame.image.load("img/target.png")
+target_img = pygame.transform.scale(target_img, (80, 80))  # Принудительное изменение размера
 
 # Определение размеров цели
 target_width = 80  # ширина
